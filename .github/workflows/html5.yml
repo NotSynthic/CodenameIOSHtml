@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Update-Html5
-          path: export/release/html5/bin/CodenameEngine.html
+          path: export/release/html5/bin/index.html
       - name: Clearing already existing cache
         uses: actions/github-script@v6
         with:
