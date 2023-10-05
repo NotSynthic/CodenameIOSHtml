@@ -27,7 +27,9 @@ class SaveWarning {
 						if (closingWindow) WindowUtils.resetClosing();
 					} else {
 						WindowUtils.preventClosing = false; WindowUtils.resetClosing();
-						Sys.exit(0);
+					        #if !html5
+							Sys.exit(0);
+						#end
 					}
 				}
 			},
